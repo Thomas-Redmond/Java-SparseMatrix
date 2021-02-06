@@ -1,0 +1,19 @@
+REPORT - C1908527 - CM2307 Coursework
+COMPLEXITY ANALYSIS
+
+1) Sorting non-zero elements within the loadEntries:
+
+The worst-case time complexity allowed for the sorting was O(nlogn), where n is the number of objects to be sorted.
+
+It takes O(1) time to find the midpoint of the sequence.
+It takes O(m) time to merge two sub-sequences with m elements which gives O(m) total time. Each “level” has k sequences each with O(n/k) elements hence total time per level is k * O(n/k) which is O(n) time.
+There are O(log n) levels as each layer halves the sub-sequence length giving an overall time of O(n log n).
+
+Dr Bailin Deng. 2020. Week 2: Sorting. CM2307 Object Orientation, Algorithms and Data Structures. Cardiff university. Available at: https://learningcentral.cf.ac.uk/webapps/blackboard/execute/content/file?cmd=view&content_id=_5619870_1&course_id=_399781_1 [Accessed: 03/02/2021].
+
+
+2) Adding two matrices within the method add:
+The two matrices arrays have n1 and n2 objects, respectively.
+The arrays are iterated through which takes O(n1+n2) time. The comparisons between the array values take O(1) as does the time taken to populate the new array with a single element from n1 / n2 or both.
+Therefore the time complexity of the addition algorithm is O(n1 + n2).
+
